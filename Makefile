@@ -1,7 +1,2 @@
-all: main
- prog: main.c
- 	gcc -Wall -Werror -o main main.c
- clean:
- 	rm main
- run:
- 	./main
+yaya: main.c
+	gcc -Wall -Werror -o main main.c
