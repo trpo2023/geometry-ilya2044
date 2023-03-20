@@ -9,7 +9,11 @@ int main()
     FILE* file;
 
     file1 = fopen("test.txt", "r");
-
+    if (file1 == NULL) {
+        printf("File not found\n");
+        getchar();
+        return -1;
+    }
     int i, ind_open_bracket = 0, ind_close_bracket = 0, ind_last_num_elm = 0,
            ind_first_num_elm = 0, ind_second_num_elm = 0;
     int l = 0, c = 0, e = 0, error = 0;
@@ -27,13 +31,19 @@ int main()
     fclose(file1);
 
     char a[l], b[6] = "circle";
-    file = fopen("test.txt", "r");
+    file = fopen("test1.txt", "r");
+    if (file == NULL) {
+        printf("File not found\n");
+        getchar();
+        return -1;
+    }
     while (fgets(a, l + 1, file)) {
         printf("%s", a);
 
         for (i = 0; i < 7; i++) {
             if (a[i] != b[i] && i < 6) {
-                printf("Неправильное название объекта, ожидалось'circle'\n");
+                printf("Неправильное название объекта, "
+                       "ожидалось'circle'\n");
                 error = 1;
                 break;
                 ;
