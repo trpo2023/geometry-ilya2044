@@ -5,7 +5,7 @@
 
 int main()
 {
-    FILE* file1;
+    dq FILE* file1;
     FILE* file;
 
     file1 = fopen("test.txt", "r");
