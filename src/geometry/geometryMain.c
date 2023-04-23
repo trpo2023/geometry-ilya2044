@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #define _USE_MATH_DEFINES
-#include <libgeometry/figures.wkt>
+
 #include <libgeometry/geometryFuncs.c>
 int main(int argc, char* argv[])
 {
