@@ -2,3 +2,8 @@ main
 tempCodeRunnerFile*
 test.txt
 test1.txt
+*.o
+*.swp
+*~
+*main
+*#

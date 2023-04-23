@@ -4,7 +4,7 @@
 #include <string.h>
 #define _USE_MATH_DEFINES
 
-#include <libgeometry/geometryFuncs.c>
+#include <geometry/geometryFuncs.c>
 int main(int argc, char* argv[])
 {
     if (argc != 2) {
